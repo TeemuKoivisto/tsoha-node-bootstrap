@@ -1,0 +1,11 @@
+# node modules
+node_modules
+
+# bower
+build/bower_components
+
+# gedit files in linux
+*~
+
+# if you are using netbeans
+nbproject
