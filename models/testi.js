@@ -23,7 +23,7 @@ module.exports.findAll = function(req, res) {
 
 module.exports.save = function(req, res) {
 	if (!req.body) {
-		res.status(200).send('No content in testi');
+		res.status(200).send("No content in testi");
 	}
 	var stringified = JSON.stringify(req.body);
 	var obj = JSON.parse(stringified);

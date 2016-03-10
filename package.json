@@ -1,10 +1,12 @@
 {
   "name": "tsoha-node-bootstrap",
   "version": "1.0.0",
-  "description": "bootstrap nodella",
+  "description": "tsoha bootstrap nodella",
+  "engines": {
+    "node": "5.8.0"
+  },
   "main": "index.js",
   "scripts": {
-    "install": "npm install bower -g && bower install",
     "start": "node index.js",
     "test": "node_modules/mocha/bin/mocha"
   },
@@ -20,11 +22,11 @@
   "homepage": "https://github.com/TeemuKoivisto/tsoha-node-bootstrap#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
     "express": "^4.13.4",
     "mongoose": "^4.4.5",
-    "q": "^1.4.1"
-  },
-  "devDependencies": {
+    "pg": "^4.5.1",
+    "q": "^1.4.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-nodemon": "^2.0.4",

@@ -1,12 +1,12 @@
 {
-  "name": "PysakkiOpas",
-  "description": "* [Linkki sovellukseen](http://pysakki-opas.bitballoon.com/)",
+  "name": "tsoha-node-bootstrap",
+  "description": "",
   "main": "index.js",
   "authors": [
-    "ahjyrkia"
+    "TeemuKoivisto"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/ahjyrkia/PysakkiOpas",
+  "homepage": "https://github.com/TeemuKoivisto/tsoha-node-bootstrap",
   "moduleType": [
     "node"
   ],
@@ -14,14 +14,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "public_html/bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
     "jquery": "^2.2.1",
-    "bootstrap": "^3.3.6",
-    "angular": "^1.5.0",
-    "angular-ui-router": "ui-router#^0.2.18"
+    "bootstrap": "^3.3.6"
   }
 }

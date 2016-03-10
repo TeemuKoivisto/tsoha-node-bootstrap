@@ -1,8 +1,8 @@
-# node modules
+# npm packages
 node_modules
 
 # bower
-build/bower_components
+views/bower_components
 
 # gedit files in linux
 *~
