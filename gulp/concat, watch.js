@@ -4,13 +4,13 @@ var gulp = require("gulp"),
 gulp.task("concat-js", function() {
     gulp.src("views/**/*.js")
     .pipe(concat("all.js"))
-    .pipe(gulp.dest("public/"));
+    .pipe(gulp.dest("views/"));
 });
 
 gulp.task("concat-css", function() {
     gulp.src("views/**/*.css")
     .pipe(concat("styles.css"))
-    .pipe(gulp.dest("public/"));
+    .pipe(gulp.dest("views/"));
 });
 
 gulp.task("watch-app", ["concat-js", "concat-css"], function() {
