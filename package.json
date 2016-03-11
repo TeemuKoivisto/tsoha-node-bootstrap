@@ -26,12 +26,16 @@
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "mongoose": "^4.4.5",
+    "morgan": "^1.6.1",
     "pg": "^4.5.1",
-    "q": "^1.4.1",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-nodemon": "^2.0.4",
-    "morgan": "^1.6.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "nunjucks": "^2.4.0",
     "wrench": "^1.5.8"
   }
 }

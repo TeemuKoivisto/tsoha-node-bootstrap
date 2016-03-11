@@ -1,21 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <title>tsoha</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
+        <header>
+            {% include "templates/partials/navigation.html" %}
+        </header>
         <main>
             <h1>Tsoha jippii</h1>
             <p>olen niin iloinen</p>
+            
+            {% block content %}{% endblock %}
         </main>
         
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         
-		<script src="all.js"></script>
+        <script src="all.js"></script>
     </body>
 </html>

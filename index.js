@@ -13,6 +13,12 @@ var bodyParser = require("body-parser");
 var logger = require("morgan");
 app.use(logger("dev"));
 
+// var nunjucks = require("nunjucks");
+// nunjucks.configure("views", {
+    // autoescape: true,
+    // express: app
+// });
+
 app.set("view engine", "ejs");
 
 app.use(express.static("views/"));
