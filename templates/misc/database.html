@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tietokantayhteystesti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <style>.panel h2 {text-transform: capitalize; } th {text-transform: capitalize;}</style>
+</head>
+<body style="padding: 25px;">
+<div class="container" id="content">
+  <div class="page-header">
+    <h1>Projektin tietokantataulut</h1>
+  </div>
+<div class="alert alert-success">Tietokantayhteyden muodostaminen onnistui!</div>
+<?php
+foreach($tables as $table): ?>
+  <h2><?= $table->getName(); ?></h2>
+  <?php prettyprint($table->getColumns()); ?>
+  <button type='button' class='btn-link expandable collapsed' data-toggle='collapse' data-target='#expandable_<?= $table->getName(); ?>'>
+  Tietokantataulussa on yhteensä <?= $table->getRowCount(); ?> riviä:
+  </button>
+  <div id='expandable_<?= $table->getName(); ?>' class='collapse'>
+  <?php prettyprint($table->getRows()); ?>
+  </div>
+<?php endforeach; ?>
+</div>
+</body>
+</html>
